@@ -1,0 +1,236 @@
+{
+  "corpus": "docker-docs",
+  "page_convention": "For HTML, each documentation unit is treated as one logical page and uses page number 1.",
+  "questions": [
+    {
+      "id": "q01",
+      "split": "dev",
+      "type": "direct",
+      "question": "Docker là gì và Docker giúp tách biệt điều gì?",
+      "expected_answer": "Docker là một nền tảng mở để phát triển, vận chuyển và chạy ứng dụng; Docker tách ứng dụng khỏi hạ tầng.",
+      "gold_source_id": "docker-overview",
+      "gold_page": 1,
+      "evidence_quote": "Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.",
+      "filter": null
+    },
+    {
+      "id": "q02",
+      "split": "dev",
+      "type": "direct",
+      "question": "Container Docker cung cấp những đặc điểm gì khiến không cần phụ thuộc vào phần mềm cài trên host?",
+      "expected_answer": "Container nhẹ và chứa mọi thứ cần thiết để chạy ứng dụng.",
+      "gold_source_id": "docker-overview",
+      "gold_page": 1,
+      "evidence_quote": "Containers are lightweight and contain everything needed to run the application, so you don't need to rely on what's installed on the host.",
+      "filter": null
+    },
+    {
+      "id": "q03",
+      "split": "dev",
+      "type": "direct_filter",
+      "question": "Docker image được định nghĩa như thế nào?",
+      "expected_answer": "Image là một template chỉ đọc chứa hướng dẫn để tạo container Docker.",
+      "gold_source_id": "docker-overview",
+      "gold_page": 1,
+      "evidence_quote": "An image is a read-only template with instructions for creating a Docker container.",
+      "filter": {
+        "section": "get-started"
+      }
+    },
+    {
+      "id": "q04",
+      "split": "dev",
+      "type": "direct",
+      "question": "Container là gì và điều gì xảy ra với thay đổi không nằm trong persistent storage khi container bị xóa?",
+      "expected_answer": "Container là một instance có thể chạy của image; thay đổi không được lưu trong persistent storage sẽ biến mất.",
+      "gold_source_id": "docker-overview",
+      "gold_page": 1,
+      "evidence_quote": "A container is defined by its image as well as any configuration options you provide to it when you create or start it. When a container is removed, any changes to its state that aren't stored in persistent storage disappear.",
+      "filter": null
+    },
+    {
+      "id": "q05",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "Khi sửa Dockerfile rồi build lại image, Docker có phải build lại toàn bộ các layer không?",
+      "expected_answer": "Không. Chỉ các layer đã thay đổi được build lại.",
+      "gold_source_id": "docker-overview",
+      "gold_page": 1,
+      "evidence_quote": "When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt.",
+      "filter": null
+    },
+    {
+      "id": "q06",
+      "split": "dev",
+      "type": "direct_filter",
+      "question": "Multi-stage build giúp giảm kích thước image cuối cùng bằng cách nào?",
+      "expected_answer": "Nó tách phần build khỏi output cuối và chỉ giữ các file cần thiết để chạy ứng dụng.",
+      "gold_source_id": "docker-build-best-practices",
+      "gold_page": 1,
+      "evidence_quote": "Multi-stage builds let you reduce the size of your final image, by creating a cleaner separation between the building of your image and the final output. Split your Dockerfile instructions into distinct stages to make sure that the resulting output only contains the files that are needed to run the application.",
+      "filter": {
+        "section": "build"
+      }
+    },
+    {
+      "id": "q07",
+      "split": "dev",
+      "type": "conditional",
+      "question": "Dữ liệu ghi vào writable container layer có còn tồn tại sau khi container bị hủy không?",
+      "expected_answer": "Không, dữ liệu ở container layer không persist sau khi container bị destroy.",
+      "gold_source_id": "docker-engine-storage",
+      "gold_page": 1,
+      "evidence_quote": "Data written to the container layer doesn't persist when the container is destroyed.",
+      "filter": null
+    },
+    {
+      "id": "q08",
+      "split": "dev",
+      "type": "direct_filter",
+      "question": "Docker volume có ưu điểm gì khi container sử dụng volume bị xóa?",
+      "expected_answer": "Volume giữ dữ liệu ngay cả khi các container đang sử dụng nó bị xóa.",
+      "gold_source_id": "docker-engine-storage",
+      "gold_page": 1,
+      "evidence_quote": "Volumes are persistent storage mechanisms managed by the Docker daemon. They retain data even after the containers using them are removed.",
+      "filter": {
+        "section": "storage"
+      }
+    },
+    {
+      "id": "q09",
+      "split": "dev",
+      "type": "comparison",
+      "question": "Bind mount khác volume ở điểm nào về vị trí lưu trữ và quyền truy cập?",
+      "expected_answer": "Bind mount liên kết trực tiếp đường dẫn trên host với container; volume dùng vị trí lưu trữ do Docker quản lý.",
+      "gold_source_id": "docker-engine-storage",
+      "gold_page": 1,
+      "evidence_quote": "Bind mounts create a direct link between a host system path and a container, allowing access to files or directories stored anywhere on the host. Since they aren't isolated by Docker, both non-Docker processes on the host and container processes can modify the mounted files simultaneously.",
+      "filter": null
+    },
+    {
+      "id": "q10",
+      "split": "dev",
+      "type": "conditional_filter",
+      "question": "Khi nào nên dùng tmpfs mount thay vì storage cần persist?",
+      "expected_answer": "Dùng tmpfs khi cần lưu trữ tạm thời trong memory và dữ liệu không cần tồn tại sau phiên container.",
+      "gold_source_id": "docker-engine-storage",
+      "gold_page": 1,
+      "evidence_quote": "A tmpfs mount stores files directly in the host machine's memory, ensuring the data is not written to disk. This storage is ephemeral: the data is lost when the container is stopped or restarted, or when the host is rebooted.",
+      "filter": {
+        "section": "storage"
+      }
+    },
+    {
+      "id": "q11",
+      "split": "dev",
+      "type": "direct",
+      "question": "Docker Compose dùng để làm gì?",
+      "expected_answer": "Compose dùng để định nghĩa và chạy ứng dụng nhiều container.",
+      "gold_source_id": "docker-compose-overview",
+      "gold_page": 1,
+      "evidence_quote": "Docker Compose is a tool for defining and running multi-container applications.",
+      "filter": null
+    },
+    {
+      "id": "q12",
+      "split": "dev",
+      "type": "direct",
+      "question": "Compose quản lý những thành phần nào trong một application stack bằng file YAML?",
+      "expected_answer": "Services, networks và volumes.",
+      "gold_source_id": "docker-compose-overview",
+      "gold_page": 1,
+      "evidence_quote": "Compose simplifies the control of your entire application stack, making it easy to manage services, networks, and volumes in a single YAML configuration file.",
+      "filter": null
+    },
+    {
+      "id": "q13",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "Trong mạng mặc định của Docker Compose, container nên dùng IP hay tên service để liên lạc?",
+      "expected_answer": "Nên dùng tên service vì Compose cung cấp DNS nội bộ và tên service ổn định hơn IP.",
+      "gold_source_id": "docker-compose-networking",
+      "gold_page": 1,
+      "evidence_quote": "Each service registers its name with an internal DNS server, so containers can reach each other using the service name directly. No IP addresses or manual configuration is needed.",
+      "filter": null
+    },
+    {
+      "id": "q14",
+      "split": "dev",
+      "type": "security",
+      "question": "Docker Compose secrets được mount vào container tại vị trí nào?",
+      "expected_answer": "Secrets được mount dưới dạng file trong /run/secrets/<secret_name>.",
+      "gold_source_id": "docker-compose-secrets",
+      "gold_page": 1,
+      "evidence_quote": "Secrets are mounted as a file in\n\n/run/secrets/<secret_name>\n\ninside the container.",
+      "filter": null
+    },
+    {
+      "id": "q15",
+      "split": "dev",
+      "type": "direct",
+      "question": "Build context là gì?",
+      "expected_answer": "Build context là tập hợp các file mà builder có thể truy cập khi build.",
+      "gold_source_id": "docker-build-context",
+      "gold_page": 1,
+      "evidence_quote": "The build context is the set of files that your build can access.",
+      "filter": null
+    },
+    {
+      "id": "q16",
+      "split": "test",
+      "type": "direct_filter",
+      "question": "Tùy chọn --no-cache trong docker build có tác dụng gì?",
+      "expected_answer": "Nó tắt build cache và buộc Docker build lại tất cả layer từ đầu.",
+      "gold_source_id": "docker-build-best-practices",
+      "gold_page": 1,
+      "evidence_quote": "--no-cache\n\nflag disables the build cache, forcing Docker to rebuild all layers from scratch:",
+      "filter": {
+        "section": "build"
+      }
+    },
+    {
+      "id": "q17",
+      "split": "test",
+      "type": "comparison",
+      "question": "User-defined bridge network tốt hơn default bridge network ở điểm nào?",
+      "expected_answer": "User-defined bridge cung cấp DNS tự động giữa các container và cho phép cô lập tốt hơn.",
+      "gold_source_id": "docker-bridge-network",
+      "gold_page": 1,
+      "evidence_quote": "User-defined bridges provide automatic DNS resolution between containers",
+      "filter": null
+    },
+    {
+      "id": "q18",
+      "split": "test",
+      "type": "security",
+      "question": "Docker Engine có thể được cấu hình để chỉ chạy loại image nào?",
+      "expected_answer": "Chỉ chạy các image đã được ký.",
+      "gold_source_id": "docker-engine-security",
+      "gold_page": 1,
+      "evidence_quote": "Docker Engine can be configured to only run signed images.",
+      "filter": null
+    },
+    {
+      "id": "q19",
+      "split": "test",
+      "type": "paraphrase",
+      "question": "Compose variable interpolation giúp thay đổi image tag hoặc volume source mà không cần sửa Compose file như thế nào?",
+      "expected_answer": "Biến được chèn vào Compose file lúc runtime, cho phép thay đổi cấu hình qua biến môi trường.",
+      "gold_source_id": "docker-compose-variable-interpolation",
+      "gold_page": 1,
+      "evidence_quote": "A Compose file can use variables to offer more flexibility. If you want to quickly switch between image tags to test multiple versions, or want to adjust a volume source to your local environment, you don't need to edit the Compose file each time, you can just set variables that insert values into your Compose file at runtime.",
+      "filter": null
+    },
+    {
+      "id": "q20",
+      "split": "test",
+      "type": "conditional",
+      "question": "Khi nào nên dùng volume thay vì bind mount?",
+      "expected_answer": "Dùng volume cho dữ liệu cần persistence hoặc xử lý hiệu năng cao; dùng bind mount khi cần host và container cùng truy cập file.",
+      "gold_source_id": "docker-engine-storage",
+      "gold_page": 1,
+      "evidence_quote": "Volumes are ideal for performance-critical data processing and long-term storage needs.",
+      "filter": null
+    }
+  ]
+}

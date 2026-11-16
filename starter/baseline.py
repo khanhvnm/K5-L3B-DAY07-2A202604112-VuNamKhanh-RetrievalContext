@@ -36,6 +36,12 @@ def validate(chunks, questions):
         ids.add(q['id'])
         if q.get('split') not in ('dev', 'test') or not isinstance(q.get('question'), str) or not q['question'].strip():
             raise ValueError(f"question {q['id']}: split hoặc question không hợp lệ")
+        if not isinstance(q.get('answerable', True), bool):
+            raise ValueError(f"question {q['id']}: answerable phải là boolean")
+        if not q.get('answerable', True):
+            if q.get('expected_behavior') != 'search_and_abstain':
+                raise ValueError(f"question {q['id']}: expected_behavior không hợp lệ")
+            continue
         if not isinstance(q.get('expected_answer'), str) or not q['expected_answer'].strip():
             raise ValueError(f"question {q['id']}: expected_answer phải là chuỗi không rỗng")
         if not isinstance(q.get('gold'), list) or not q['gold']:
@@ -48,7 +54,13 @@ def validate(chunks, questions):
 
 
 def hit(chunk, gold):
-    return any(chunk['source_id'] == g['source_id'] and chunk['page'] == g['page'] and g['evidence'] in chunk['text'] for g in gold)
+    chunk_text = re.sub(r'\s+', ' ', chunk['text']).strip()
+    return any(
+        chunk['source_id'] == g['source_id']
+        and chunk['page'] == g['page']
+        and re.sub(r'\s+', ' ', g['evidence']).strip() in chunk_text
+        for g in gold
+    )
 
 
 class TfidfIndex:
@@ -94,10 +106,10 @@ def evaluate(index, questions, budget=800):
         results = index.search(q['question'], top_k=3)
         context, ids = pack_context(results, budget)
         elapsed_ms = (time.perf_counter() - start) * 1000
-        marked = [{**c, 'hit': hit(c, q['gold'])} for c in results]
+        marked = [{**c, 'hit': hit(c, q.get('gold', []))} for c in results]
         traces.append({'query_id': q['id'], 'split': q['split'], 'question': q['question'],
                        'strategy': 'tfidf', 'top_k': 3, 'budget_chars': budget,
-                       'gold': q['gold'], 'results': marked, 'context': context, 'context_ids': ids,
+                       'gold': q.get('gold', []), 'results': marked, 'context': context, 'context_ids': ids,
                        'context_chars': len(context), 'elapsed_ms': elapsed_ms,
                        'hit1': bool(marked and marked[0]['hit']),
                        'hit3': any(c['hit'] for c in marked),
@@ -111,6 +123,7 @@ def main():
     parser.add_argument('--questions', required=True, type=Path)
     parser.add_argument('--split', required=True, choices=('dev', 'test'))
     parser.add_argument('--output', required=True, type=Path, help='Thư mục output; file cùng tên sẽ bị ghi đè')
+    parser.add_argument('--budget', type=int, default=2400, help='Context budget theo ký tự')
     args = parser.parse_args()
     chunks = json.loads(args.chunks.read_text(encoding='utf-8'))
     questions = json.loads(args.questions.read_text(encoding='utf-8'))
@@ -120,8 +133,11 @@ def main():
     started = time.perf_counter()
     index = TfidfIndex(chunks)
     index_seconds = time.perf_counter() - started
-    traces = evaluate(index, selected)
+    traces = evaluate(index, selected, budget=args.budget)
+    answerable_n = sum(q.get('answerable', True) for q in selected)
     summary = {'strategy': 'tfidf', 'split': args.split, 'n': len(traces),
+               'answerable_n': answerable_n,
+               'unanswerable_n': len(traces) - answerable_n,
                'hit1': sum(t['hit1'] for t in traces), 'hit3': sum(t['hit3'] for t in traces),
                'context_hit': sum(t['context_hit'] for t in traces),
                'avg_context_chars': statistics.mean(t['context_chars'] for t in traces),
