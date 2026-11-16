@@ -56,6 +56,23 @@ class AgentTests(unittest.TestCase):
         self.assertEqual(result['status'], 'answered')
         self.assertTrue(all(len(e['context']) <= 90 for e in result['events'] if e['event'] == 'search'))
 
+    def test_default_budget_keeps_day6_sized_chunk_in_context(self):
+        long_chunk = {**CHUNK, 'text': 'x' * 900}
+        c = Controller([{'action': 'search', 'query': 'q'},
+                        {'action': 'answer', 'answer': 'Evidence [c1]', 'citations': ['c1']}])
+        result = run_agent('q', c, Retriever([long_chunk]))
+        search_event = next(e for e in result['events'] if e['event'] == 'search')
+        self.assertIn('c1', search_event['context_ids'])
+        self.assertEqual(result['status'], 'answered')
+
+    def test_valid_citations_are_appended_when_model_omits_markers(self):
+        c = Controller([{'action': 'search', 'query': 'q'},
+                        {'action': 'answer', 'answer': 'Evidence', 'citations': ['c1']}])
+        result = run_agent('q', c, Retriever([CHUNK]))
+        self.assertEqual(result['status'], 'answered')
+        self.assertTrue(result['answer'].endswith('[c1]'))
+        self.assertEqual(result['citations'], ['c1'])
+
     def test_configurable_retrieval_allows_more_than_two_calls(self):
         c = Controller([{'action': 'search', 'query': str(i)} for i in range(3)] +
                        [{'action': 'answer', 'answer': '7 ngày [c1]', 'citations': ['c1']}])

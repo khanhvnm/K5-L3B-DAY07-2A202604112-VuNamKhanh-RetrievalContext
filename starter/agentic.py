@@ -30,7 +30,7 @@ class Retriever(Protocol):
 
 def run_agent(question: str, controller: Controller, retriever: Retriever, *,
               filters: dict[str, Any] | None = None, max_searches: int = 4,
-              top_k: int = 3, budget: int = 800) -> dict[str, Any]:
+              top_k: int = 3, budget: int = 2400) -> dict[str, Any]:
     """Return answer, citation IDs and trace; no benchmark gold enters this loop.
 
     A final answer without valid citations, an empty context, and a search limit
@@ -66,10 +66,33 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
             answer, citations = action.get('answer'), action.get('citations')
             if not isinstance(answer, str) or not isinstance(citations, list) or any(not isinstance(i, str) for i in citations):
                 raise ValueError('answer/citations không hợp lệ')
-            valid = bool(answer.strip() and citations and all(i in chunks and f'[{i}]' in answer for i in citations))
+            valid_ids = bool(answer.strip() and citations and all(i in chunks for i in citations))
+            if valid_ids:
+                missing_markers = [f'[{i}]' for i in citations if f'[{i}]' not in answer]
+                if missing_markers:
+                    answer = f"{answer.rstrip()} {' '.join(missing_markers)}"
+            valid = bool(valid_ids and all(f'[{i}]' in answer for i in citations))
             if valid:
-                return {'status': 'answered', 'answer': answer, 'citations': citations, 'events': events + [{'event': 'answer'}]}
-            return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events + [{'event': 'invalid_or_missing_citations'}]}
+                return {
+                    'status': 'answered',
+                    'answer': answer,
+                    'citations': citations,
+                    'events': events + [{
+                        'event': 'answer',
+                        'answer': answer,
+                        'citations': citations,
+                    }],
+                }
+            return {
+                'status': 'abstain',
+                'answer': 'Không đủ bằng chứng để trả lời.',
+                'citations': [],
+                'events': events + [{
+                    'event': 'invalid_or_missing_citations',
+                    'answer': answer,
+                    'citations': citations,
+                }],
+            }
         else:
             raise ValueError('action phải là search hoặc answer')
     return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events}
