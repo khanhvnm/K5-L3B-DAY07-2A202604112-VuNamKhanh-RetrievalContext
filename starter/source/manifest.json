@@ -1,0 +1,261 @@
+{
+  "collection_id": "docker-docs",
+  "title": "Docker Official Documentation",
+  "source_path_or_url": "https://docs.docker.com/",
+  "license_or_permission": {
+    "name": "Apache License 2.0",
+    "source": "https://github.com/docker/docs/blob/main/LICENSE",
+    "note": "Documentation content is sourced from the docker/docs repository. Retain attribution and license notices."
+  },
+  "accessed_at": "2026-11-14",
+  "unit_type": "html_page",
+  "minimum_unit_characters": 1500,
+  "metadata_fields": {
+    "section": "Documentation topic grouping used for retrieval filters.",
+    "language": "All selected pages are English."
+  },
+  "units": [
+    {
+      "document_id": "docker-build-best-practices",
+      "title": "Building best practices",
+      "source_path_or_url": "https://docs.docker.com/build/building/best-practices/",
+      "section": "build",
+      "status": "valid",
+      "error": "HTTP Error 404: Not Found",
+      "character_count": 29560
+    },
+    {
+      "document_id": "docker-overview",
+      "title": "Docker overview",
+      "source_path_or_url": "https://docs.docker.com/get-started/docker-overview/",
+      "section": "get-started",
+      "character_count": 8958,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-desktop-use",
+      "title": "Explore Docker Desktop",
+      "source_path_or_url": "https://docs.docker.com/desktop/use-desktop/",
+      "section": "get-started",
+      "character_count": 2552,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-first-repository",
+      "title": "Share the application",
+      "source_path_or_url": "https://docs.docker.com/get-started/04_sharing_app/",
+      "section": "get-started",
+      "character_count": 5372,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-persist-data",
+      "title": "Persisting container data",
+      "source_path_or_url": "https://docs.docker.com/get-started/workshop/05_persisting_data/",
+      "section": "get-started",
+      "character_count": 5372,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-build-context",
+      "title": "Build context",
+      "source_path_or_url": "https://docs.docker.com/build/concepts/context/",
+      "section": "build",
+      "character_count": 22527,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-engine-install",
+      "title": "Install Docker Engine",
+      "source_path_or_url": "https://docs.docker.com/engine/install/",
+      "section": "engine",
+      "character_count": 3542,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-engine-security",
+      "title": "Docker Engine security",
+      "source_path_or_url": "https://docs.docker.com/engine/security/",
+      "section": "engine",
+      "character_count": 12923,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-engine-network",
+      "title": "Docker Engine networking",
+      "source_path_or_url": "https://docs.docker.com/engine/network/",
+      "section": "engine",
+      "character_count": 12546,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-engine-storage",
+      "title": "Manage data in Docker",
+      "source_path_or_url": "https://docs.docker.com/engine/storage/",
+      "section": "engine",
+      "character_count": 4180,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-volumes",
+      "title": "Volumes",
+      "source_path_or_url": "https://docs.docker.com/engine/storage/volumes/",
+      "section": "storage",
+      "character_count": 24811,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-bind-mounts",
+      "title": "Bind mounts",
+      "source_path_or_url": "https://docs.docker.com/engine/storage/bind-mounts/",
+      "section": "storage",
+      "character_count": 15935,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-tmpfs",
+      "title": "tmpfs mounts",
+      "source_path_or_url": "https://docs.docker.com/engine/storage/tmpfs/",
+      "section": "storage",
+      "character_count": 7400,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-network-drivers",
+      "title": "Network drivers",
+      "source_path_or_url": "https://docs.docker.com/engine/network/drivers/",
+      "section": "network",
+      "character_count": 3108,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-bridge-network",
+      "title": "Bridge network driver",
+      "source_path_or_url": "https://docs.docker.com/engine/network/drivers/bridge/",
+      "section": "network",
+      "character_count": 22420,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-host-network",
+      "title": "Host network driver",
+      "source_path_or_url": "https://docs.docker.com/engine/network/drivers/host/",
+      "section": "network",
+      "character_count": 5210,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-overlay-network",
+      "title": "Overlay network driver",
+      "source_path_or_url": "https://docs.docker.com/engine/network/drivers/overlay/",
+      "section": "network",
+      "character_count": 12726,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-cli",
+      "title": "Docker CLI reference",
+      "source_path_or_url": "https://docs.docker.com/reference/cli/docker/",
+      "section": "cli",
+      "character_count": 18927,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-run",
+      "title": "docker run",
+      "source_path_or_url": "https://docs.docker.com/reference/cli/docker/container/run/",
+      "section": "cli",
+      "character_count": 61491,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-build",
+      "title": "docker build",
+      "source_path_or_url": "https://docs.docker.com/reference/cli/docker/build/",
+      "section": "cli",
+      "character_count": 39164,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-ps",
+      "title": "docker ps",
+      "source_path_or_url": "https://docs.docker.com/reference/cli/docker/container/ls/",
+      "section": "cli",
+      "character_count": 15641,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-exec",
+      "title": "docker exec",
+      "source_path_or_url": "https://docs.docker.com/reference/cli/docker/container/exec/",
+      "section": "cli",
+      "character_count": 3826,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-compose-overview",
+      "title": "Docker Compose overview",
+      "source_path_or_url": "https://docs.docker.com/compose/",
+      "section": "compose",
+      "character_count": 1510,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-compose-watch",
+      "title": "Use Compose Watch",
+      "source_path_or_url": "https://docs.docker.com/compose/how-tos/file-watch/",
+      "section": "compose",
+      "character_count": 8622,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-compose-dependency-order",
+      "title": "Control startup and shutdown order",
+      "source_path_or_url": "https://docs.docker.com/compose/how-tos/startup-order/",
+      "section": "compose",
+      "character_count": 2613,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-compose-variable-interpolation",
+      "title": "Variable interpolation",
+      "source_path_or_url": "https://docs.docker.com/compose/how-tos/environment-variables/variable-interpolation/",
+      "section": "compose",
+      "character_count": 10240,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-compose-networking",
+      "title": "Networking in Compose",
+      "source_path_or_url": "https://docs.docker.com/compose/how-tos/networking/",
+      "section": "compose",
+      "character_count": 13654,
+      "status": "valid"
+    },
+    {
+      "document_id": "docker-compose-application-model",
+      "title": "How Compose works",
+      "source_path_or_url": "https://docs.docker.com/compose/intro/compose-application-model/",
+      "section": "compose",
+      "status": "valid",
+      "error": "HTTP Error 404: Not Found",
+      "character_count": 7067
+    },
+    {
+      "document_id": "docker-compose-secrets",
+      "title": "Manage secrets securely in Docker Compose",
+      "source_path_or_url": "https://docs.docker.com/compose/how-tos/use-secrets/",
+      "section": "compose",
+      "character_count": 3659,
+      "status": "valid"
+    },
+    {
+      "document_id": "dockerfile-overview",
+      "title": "Dockerfile overview",
+      "source_path_or_url": "https://docs.docker.com/build/concepts/dockerfile/",
+      "section": "build",
+      "character_count": 8817,
+      "status": "valid"
+    }
+  ]
+}

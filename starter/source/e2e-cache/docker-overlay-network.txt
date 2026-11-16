@@ -1,0 +1,2434 @@
+Back
+
+Manuals
+
+Get started
+
+Guides
+
+Reference
+
+AI and agents
+
+Overview
+
+Docker Agentic Platform
+Experimental
+
+Sign up
+
+Get started
+
+Kits
+
+Sandboxes
+
+Schedules
+
+MCP
+
+Secrets
+
+Policies
+
+FAQ
+
+Release notes
+
+Docker Sandboxes
+
+Install
+
+Get started locally
+
+Usage
+
+Cloud sandboxes
+
+Local and cloud
+
+Use cloud sandboxes
+
+Environment files
+
+Credentials
+
+Schedules
+
+Network policy
+
+Move a sandbox
+
+Agents
+
+Claude Code
+
+Codex
+
+Copilot
+
+Cursor
+
+Devin
+
+Docker Agent
+
+Droid
+
+Kiro
+
+OpenCode
+
+Shell
+
+Workflows
+
+Git workflows
+
+Local development
+
+Authenticate tools
+
+Agent skills
+
+CI and headless
+
+Configuration
+
+Settings
+
+Credentials
+
+Models
+
+Environment files
+Experimental
+
+GPU passthrough
+
+Upstream proxy
+
+Registry mirror
+
+Integrations
+
+VS Code
+
+Cursor
+
+Claude Desktop
+
+ChatGPT
+
+T3 Code
+
+Orca
+
+MCP gateway
+
+Kits
+
+Use kits
+
+Author kits
+
+Compose a kit set
+
+Base images
+
+Build an agent workload
+
+Build a tool mixin
+
+Authoring patterns
+
+Debug a kit
+
+Capability support
+
+Build and distribute kits
+
+Kits v2
+
+Architecture
+
+Security model
+
+Isolation layers
+
+Defaults
+
+Troubleshooting
+
+FAQ
+
+Release notes
+
+Sandboxes API and SDK
+
+Install the SDK
+
+Get started
+
+API concepts
+
+Authentication and authorization
+
+Errors and retries
+
+Compute sizes and limits
+
+Cookbook
+
+API reference
+
+AI governance
+
+Local policy
+
+Try it out
+
+Manage network rules
+
+Respond to approvals
+
+Inspect policies
+
+Test and monitor
+
+Organization governance
+
+Get started
+
+Enforce sign-in
+
+Policies
+
+Network
+
+Filesystem
+
+MCP
+
+Create and manage
+
+Audit logs
+
+Configure delivery
+
+View and export
+
+Forward to a SIEM
+
+Retrieve with the API
+
+Reference
+
+Network rules
+
+Filesystem mount rules
+
+MCP policy
+
+Policy limits
+
+Audit records
+
+AI Governance API
+
+AI Governance Audit Logs API
+
+Troubleshooting
+
+Model Runner
+
+Get started with DMR
+
+DMR REST API
+
+Configuration options
+
+DMR examples
+
+IDE and tool integrations
+
+Open WebUI integration
+
+Inference engines
+
+Gordon
+
+Use cases
+
+Concepts
+
+Capabilities
+
+Data privacy
+
+How-to guides
+
+Docker Desktop
+
+CLI
+
+Permissions
+
+Configure tools
+
+Usage limits
+
+Docker Agent
+
+Getting Started
+
+Introduction
+
+Installation
+
+Set Up a Model
+
+Quick Start
+
+Core Concepts
+
+Agents
+
+Models
+
+Tools
+
+Multi-Agent
+
+Agent Distribution
+
+Configuration
+
+Overview
+
+HCL Configuration
+
+Agent Config
+
+Model Config
+
+Tool Config
+
+Custom Commands
+
+Hooks
+
+Evaluators
+
+Permissions
+
+Budget
+
+Ignoring files
+
+Sandbox Mode
+
+Structured Output
+
+Flavors
+
+Model Routing
+
+User Settings
+
+Telemetry
+
+OpenTelemetry Tracing
+
+Built-in Tools
+
+File
+
+Filesystem
+
+Shell
+
+Background Jobs
+
+Script
+
+Open URL
+
+Random
+
+Fetch
+
+A2A
+
+Handoff
+
+Transfer Task
+
+Background Agents
+
+Memory
+
+RAG
+
+MCP Catalog
+
+Git
+
+MCP
+
+Scheduler
+
+Think
+
+Environment
+
+Webhook
+
+Calculator
+
+Date and Time
+
+Plan
+
+Todo
+
+Tasks
+
+User Prompt
+
+Model Picker
+
+Session Context
+
+LSP
+
+OpenAPI
+
+API
+
+Features
+
+Terminal UI
+
+Kanban Board
+
+Snapshots
+
+Sessions
+
+CLI Reference
+
+MCP Mode
+
+Coding Harnesses
+
+A2A Protocol
+
+ACP
+
+API Server
+
+Chat Server
+
+Evaluation
+
+Skills
+
+Code Mode
+
+Remote MCP Servers
+
+Model Providers
+
+Overview
+
+Anthropic
+
+API Route
+
+Atlas Cloud
+
+AWS Bedrock
+
+Baseten
+
+Cerebras
+
+ChatGPT (OpenAI account)
+
+Cloudflare AI Gateway
+
+Cloudflare Workers AI
+
+DeepSeek
+
+Docker Model Runner
+
+Fireworks AI
+
+GitHub Copilot
+
+Google Gemini
+
+Groq
+
+Hugging Face
+
+Local Models
+
+MiniMax
+
+Mistral
+
+Moonshot AI
+
+Nativ
+
+Nebius
+
+OpenAI
+
+OpenCode Go
+
+OpenCode Zen
+
+OpenRouter
+
+OVHcloud
+
+DaoXE
+
+Together AI
+
+Vercel AI Gateway
+
+xAI (Grok)
+
+Provider Definitions
+
+NVIDIA NIM
+
+Guides
+
+Tips & Best Practices
+
+Thinking / Reasoning
+
+Managing Secrets
+
+Go SDK
+
+Managing Context & Compaction
+
+Running Agents Headless & in CI
+
+Troubleshooting
+
+Docker Skills
+
+Install
+
+Application development
+
+Docker Desktop
+
+Setup
+
+Install
+
+Mac
+
+Mac permission requirements
+
+Windows
+
+Windows permission requirements
+
+Linux
+
+Ubuntu
+
+Debian
+
+Fedora
+
+Arch
+
+RHEL
+
+VM or VDI environments
+
+Explore Docker Desktop
+
+Containers
+
+Images
+
+Volumes
+
+Builds
+
+Kubernetes
+
+Logs
+
+Resource Saver mode
+
+Features and capabilities
+
+MCP Catalog and Toolkit
+Beta
+
+Get started
+
+Catalog
+
+Profiles
+
+Toolkit UI
+
+Use with CLI
+
+Dynamic discovery
+
+Gateway
+
+FAQs
+
+Networking
+
+How-tos
+
+GPU support
+
+USB/IP support
+
+Synchronized file shares
+
+containerd image store
+
+Wasm workloads
+Beta
+
+Docker Desktop CLI
+
+Virtual Machine Manager
+Updated
+
+WSL
+
+Best practices
+
+Custom kernels
+
+Use WSL
+
+Settings and maintenance
+
+Change settings
+
+Backup and restore data
+
+Troubleshoot and support
+
+Troubleshoot and diagnose
+
+Common topics
+
+FAQs
+
+General
+
+Mac
+
+Windows
+
+Linux
+
+Releases
+
+Give feedback
+
+Uninstall
+
+Release notes
+
+Enterprise
+
+Deploy Docker Desktop
+
+MSI installer
+
+PKG installer
+
+MS Store
+
+Deploy with Intune
+
+Deploy with Jamf Pro
+
+Microsoft Dev Box
+
+FAQs
+
+Allowlist
+
+Enforce sign-in
+
+Configure
+
+Hardened Docker Desktop
+
+Enhanced Container Isolation
+
+Enable ECI
+
+Configure advanced settings
+
+Limitations
+
+FAQs
+
+Settings Management
+
+Use a JSON file
+
+Use Docker Home
+
+Desktop settings reporting
+
+Settings reference
+
+Air-gapped containers
+
+Registry Access Management
+
+Image Access Management
+
+Namespace access
+
+Manage unassociated machines
+
+Docker Engine
+
+Install
+
+Ubuntu
+
+Debian
+
+RHEL
+
+Fedora
+
+Raspberry Pi OS (32-bit / armhf)
+
+CentOS
+
+Binaries
+
+Post-installation steps
+
+Storage
+
+Volumes
+
+Bind mounts
+
+tmpfs mounts
+
+Image mounts
+
+Storage drivers
+
+Select a storage driver
+
+BTRFS storage driver
+
+Device Mapper storage driver (deprecated)
+
+OverlayFS storage driver
+
+VFS storage driver
+
+windowsfilter storage driver
+
+ZFS storage driver
+
+containerd image store
+
+Networking
+
+Docker with iptables
+
+Docker with nftables
+
+Packet filtering and firewalls
+
+Port publishing and mapping
+
+Network drivers
+
+Bridge network driver
+
+Host network driver
+
+IPvlan network driver
+
+Macvlan network driver
+
+None network driver
+
+Overlay network driver
+
+CA certificates
+
+Legacy container links
+
+Containers
+
+Start containers automatically
+
+Run multiple processes in a container
+
+Resource constraints
+
+GPU access
+
+Runtime metrics
+
+Running containers
+
+CLI
+
+Completion
+
+Proxy configuration
+
+Filter commands
+
+Format command and log output
+
+OpenTelemetry for the Docker CLI
+
+Daemon
+
+Start the daemon
+
+Use IPv6 networking
+
+Daemon proxy configuration
+
+Embedded containerd
+Experimental
+
+Live restore
+
+Alternative container runtimes
+
+Collect Docker metrics with Prometheus
+
+Configure remote access for Docker daemon
+
+Read the daemon logs
+
+Troubleshooting the Docker daemon
+
+Manage resources
+
+Docker contexts
+
+Docker object labels
+
+Prune unused Docker objects
+
+Logs and metrics
+
+Configure logging drivers
+
+Customize log driver output
+
+Logging drivers
+
+Amazon CloudWatch Logs logging driver
+
+ETW logging driver
+
+Fluentd logging driver
+
+Google Cloud Logging driver
+
+Graylog Extended Format logging driver
+
+Journald logging driver
+
+JSON File logging driver
+
+Local file logging driver
+
+Splunk logging driver
+
+Syslog logging driver
+
+Use a logging driver plugin
+
+Use docker logs with remote logging drivers
+
+Security
+
+Rootless mode
+
+UID/GID mapping
+
+Tips
+
+Troubleshooting
+
+Antivirus software and Docker
+
+AppArmor security profiles for Docker
+
+Content trust in Docker
+
+Automation with content trust
+
+Delegations for content trust
+
+Deploy Notary Server with Compose
+
+Manage keys for content trust
+
+Play in a content trust sandbox
+
+Docker security non-events
+
+Isolate containers with a user namespace
+
+Protect the Docker daemon socket
+
+Seccomp security profiles for Docker
+
+Verify repository client with certificates
+
+Swarm mode
+
+Administer and maintain a swarm of Docker Engines
+
+Deploy a stack to a swarm
+
+Deploy services to a swarm
+
+Getting started with Swarm mode
+
+Create a swarm
+
+Add nodes to the swarm
+
+Deploy a service to the swarm
+
+Inspect a service on the swarm
+
+Scale the service in the swarm
+
+Delete the service running on the swarm
+
+Apply rolling updates to a service
+
+Drain a node on the swarm
+
+How swarm works
+
+How nodes work
+
+How services work
+
+Manage swarm security with public key infrastructure (PKI)
+
+Swarm task states
+
+Join nodes to a swarm
+
+Lock your swarm to protect its encryption key
+
+Manage nodes in a swarm
+
+Manage sensitive data with Docker secrets
+
+Manage swarm service networks
+
+Raft consensus in swarm mode
+
+Run Docker Engine in swarm mode
+
+Store configuration data using Docker Configs
+
+Swarm mode key concepts
+
+Use Swarm mode routing mesh
+
+Deprecated features
+
+Docker Engine plugins
+
+Access authorization plugin
+
+Docker log driver plugins
+
+Docker network driver plugins
+
+Docker Plugin API
+
+Docker volume plugins
+
+Plugin Config Version 1 of Plugin V2
+
+Use Docker Engine plugins
+
+Release notes
+
+Engine v29
+
+Engine v28
+
+Engine v27
+
+Engine v26.1
+
+Engine v26.0
+
+Engine v25.0
+
+Engine v24.0
+
+Engine v23.0
+
+Engine v20.10
+
+Engine v19.03
+
+Engine v18.09
+
+Engine v18.06
+
+Engine v18.05
+
+Engine v18.04
+
+Engine v18.03
+
+Engine v18.02
+
+Engine v18.01
+
+Engine v17.12
+
+Engine v17.11
+
+Engine v17.10
+
+Engine v17.09
+
+Engine v17.07
+
+Engine v17.06
+
+Engine v17.05
+
+Engine v17.04
+
+Engine v17.03
+
+Prior releases
+
+Docker Build
+
+Core concepts
+
+Docker Build Overview
+
+Dockerfile overview
+
+Build context
+
+Build checks
+
+Building
+
+Multi-stage
+
+Variables
+
+Secrets
+
+Registry authentication
+
+Multi-platform
+
+Export binaries
+
+Container Device Interface (CDI)
+
+Best practices
+
+Base images
+
+Builders
+
+Build drivers
+
+Cloud driver
+
+Docker container driver
+
+Docker driver
+
+Kubernetes driver
+
+Remote driver
+
+Manage builders
+
+Bake
+
+Introduction
+
+Targets
+
+Inheritance
+
+Variables
+
+Expressions
+
+Functions
+
+Matrix targets
+
+Contexts
+
+Bake file reference
+
+Bake standard library functions
+
+Building with Bake from a Compose file
+
+Overriding configurations
+
+Remote Bake file definition
+
+Cache
+
+Build cache invalidation
+
+Build garbage collection
+
+Cache storage backends
+
+Amazon S3 cache
+
+Azure Blob Storage cache
+
+GitHub Actions cache
+
+Inline cache
+
+Local cache
+
+Registry cache
+
+Optimize cache usage in builds
+
+CI
+
+GitHub Actions
+
+Build workflow
+
+Bake workflow
+
+GitHub Builder architecture
+
+Annotations
+
+Attestations
+
+Build checks
+
+Build secrets
+
+Build summary
+
+BuildKit configuration
+
+Cache management
+
+Copy image between registries
+
+Export to Docker
+
+Local registry
+
+Multi-platform image
+
+Named contexts
+
+Push to multiple registries
+
+Reproducible builds
+
+Share image between jobs
+
+Tags and labels
+
+Test before push
+
+Update Docker Hub description
+
+Validating builds
+Experimental
+
+Introduction
+
+Usage
+
+Image validation
+
+Git validation
+
+Templates & examples
+
+Testing
+
+Debugging
+
+Input reference
+
+Built-in functions
+
+Metadata
+
+Annotations
+
+Build attestations
+
+Image attestation storage
+
+Provenance attestations
+
+SBOM attestations
+
+SLSA definitions
+
+Exporters
+
+Image and registry exporters
+
+Local and tar exporters
+
+OCI and Docker exporters
+
+BuildKit
+
+buildkitd.toml
+
+Configure BuildKit
+
+Custom Dockerfile syntax
+
+Dockerfile release notes
+
+Debugging
+
+OpenTelemetry support
+
+Build release notes
+
+Docker Build Cloud
+
+Setup
+
+Usage
+
+Continuous integration
+
+Optimization
+
+Builder settings
+
+Release notes
+
+Docker Offload
+
+Quickstart
+
+Core concepts
+
+Manage Offload sandboxes
+
+Usage
+
+Optimize usage
+
+Troubleshoot
+
+Docker Offload v1
+
+Quickstart
+
+Core concepts
+
+Configure
+
+Usage
+
+Troubleshoot
+
+Give feedback
+
+Docker Compose
+
+Introduction to Compose
+
+How Compose works
+
+Why use Compose?
+
+History and development
+
+Install
+
+Plugin
+
+Standalone (Legacy)
+
+Uninstall
+
+Quickstart
+
+How-tos
+
+Specify a project name
+
+Use service profiles
+
+Use AI models in Compose
+
+Control startup order
+
+Use environment variables
+
+Set environment variables
+
+Environment variables precedence
+
+Pre-defined environment variables
+
+Interpolation
+
+Best practices
+
+Build dependent images
+
+Use Compose Watch
+
+Secrets in Compose
+
+Networking
+
+Use multiple Compose files
+
+Merge
+
+Extend
+
+Include
+
+Enable GPU support
+
+Use Compose in production
+
+OCI artifact applications
+
+Use lifecycle hooks
+
+Use init containers
+New
+
+Use provider services
+
+Compose Bridge
+
+Usage
+
+Customize
+
+Use Model Runner
+
+Compose SDK
+
+Trust model for Compose files
+
+Support and feedback
+
+FAQs
+
+Give feedback
+
+Release notes
+
+Docker Extensions
+
+Marketplace extensions
+
+Non-marketplace extensions
+
+Configure a private marketplace
+
+Settings and feedback
+
+Extensions SDK
+
+The build and publish process
+
+Quickstart
+
+Part one: Build
+
+Create a simple extension
+
+Create an advanced frontend extension
+
+Add a backend to your extension
+
+Part two: Publish
+
+Add labels
+
+Validate
+
+Package and release your extension
+
+Share your extension
+
+Publish in the Marketplace
+
+Build multi-arch extensions
+
+Architecture
+
+Metadata
+
+Security
+
+Design and UI styling
+
+Guidelines
+
+Docker design principles
+
+MUI best practices
+
+Developer Guides
+
+Authentication
+
+Interacting with Kubernetes
+
+Invoke host binaries
+
+Use the Docker socket
+
+Developer SDK tools
+
+Test and debug
+
+Continuous Integration (CI)
+
+CLI reference
+
+Extension APIs
+
+Dashboard
+
+Docker
+
+Extension Backend
+
+Extension UI API
+
+Navigation
+
+Deprecated products and features
+
+Release lifecycle
+
+Supply chain security
+
+Docker Hardened Images
+
+Quickstart
+
+Explore
+
+Hardened images
+
+Build process
+
+Image types
+
+Scanner integrations
+
+Image testing
+
+Responsibility overview
+
+EU data residency
+
+Malware scanning
+
+Security concepts
+
+Attestations
+
+CIS Benchmark
+
+Code signing
+
+CVEs
+
+Distroless images
+
+FIPS
+
+glibc and musl
+
+Hardening
+
+Image digests
+
+Image provenance
+
+Immutability
+
+SBOMs
+
+SLSA
+
+Software Supply Chain Security
+
+SSDLC
+
+STIG
+
+VEX
+
+Migration
+
+Migration checklist
+
+AI-assisted migration
+Experimental
+
+Migrate from Alpine or Debian
+
+Migrate from Ubuntu
+
+Migrate from Wolfi
+
+Migration examples
+
+Go
+
+Python
+
+Node.js
+
+.NET
+
+Java
+
+How-tos
+
+Search and evaluate
+
+Mirror a repository
+
+Customize an image or chart
+
+Create and build an image
+
+Use an image
+
+Use a Helm chart
+
+Use hardened packages
+
+Verify an image or chart
+
+Scan an image
+
+Query VEX suppressions via API
+
+Apply image policies
+
+Troubleshoot
+
+Use DHI Select & Enterprise
+
+Tools
+
+Docker Hub
+
+CLI
+
+MCP server
+
+Terraform
+
+API
+
+Release notes
+
+CLI release notes
+
+Platform release notes
+
+Resources and feedback
+
+Docker Hub
+
+Quickstart
+
+Library
+
+Search
+
+Trusted content
+
+Generative AI
+
+Mirror
+
+Repositories
+
+Create
+
+Manage
+
+Repository information
+
+Access
+
+Images
+
+Tags
+
+Immutable tags
+
+Image Management
+
+Software artifacts
+
+Push images
+
+Move images
+
+Bulk migrate images
+
+Image security insights
+
+Webhooks
+
+Automated builds
+Deprecated
+
+Migrate
+
+Set up
+
+Link accounts
+
+Automated repository tests
+
+Advanced options
+
+Manage autobuilds
+
+Troubleshoot
+
+Trusted content
+
+Docker Official Images
+
+Docker Verified Publisher Program
+
+Docker-Sponsored Open Source Program
+
+Insights and analytics
+
+Export repositories
+
+Archive
+
+Delete
+
+Settings
+
+Usage and limits
+
+Pulls
+
+Optimize usage
+
+Hub MCP server
+
+Troubleshoot
+
+Release notes
+
+Docker Scout
+
+Install
+
+Quickstart
+
+Explore
+
+Dashboard
+
+Docker Scout image analysis
+
+Docker Scout metrics exporter
+
+Image details view
+
+Manage vulnerability exceptions
+
+How-tos
+
+Create an exception using the GUI
+
+Create an exception using the VEX
+
+Docker Scout environment variables
+
+Docker Scout SBOMs
+
+Use Scout with different artifact types
+
+Deep dive
+
+Advisory database sources and matching service
+
+Data collection and storage in Docker Scout
+
+Policy Evaluation
+
+Evaluate policies
+
+Integrations
+
+Container registries
+
+Continuous Integration
+
+Azure DevOps Pipelines
+
+Circle CI
+
+GitHub Actions
+
+GitLab CI/CD
+
+Jenkins
+
+Integrating Docker Scout with environments
+
+Generic (CLI)
+
+Release notes
+
+CLI release notes
+
+Platform release notes
+
+Accounts and admin
+
+Accounts
+
+Individual
+
+Setup
+
+Manage
+
+Deactivate
+
+Organization
+
+Setup
+
+Create
+
+Convert account
+
+Onboard
+
+Plan your rollout
+
+Manage
+
+Information
+
+User access workflow
+
+Members
+
+Teams
+
+Licenses
+
+Seats
+
+Products
+
+Deactivation
+
+Activity logs
+
+Insights
+
+Company
+
+Setup
+
+Manage
+
+Subscription and billing
+
+Plans
+
+Docker
+
+Docker Agentic Platform
+
+Gordon
+
+Docker Hardened Images
+
+AI Governance
+
+Docker Verified Publisher
+
+Manage
+
+Plans
+
+Payment methods
+
+3D Secure
+
+Billing details
+
+Invoice history
+
+Taxes
+
+Docker Desktop license agreement
+
+Security
+
+Announcements
+
+Access tokens
+
+Personal access tokens
+
+Organization access tokens
+
+Reference
+
+Authentication
+
+Single sign-on
+
+Setup
+
+Manage connections
+
+Troubleshoot
+
+Two-factor authentication
+
+Manage
+
+Recover your account
+
+OIDC connections
+
+Create and manage
+
+Rulesets and subject claims
+
+Troubleshoot
+
+Provision
+
+Add and manage domains
+
+SCIM
+
+Set up
+
+Group mapping
+
+Migrate
+
+Just-in-Time
+
+Auto-provision
+
+Troubleshoot
+
+Roles and permissions
+
+Core roles
+
+Custom roles
+
+Manage
+
+Permissions reference
+
+FAQs
+
+Accounts
+
+Security
+
+Subscription and billing
+
+Platform
+
+Support
+
+Support portal
+
+Release notes
+
+Home
+/
+Manuals
+/
+Docker Engine
+/
+Networking
+/
+Network drivers
+/
+Overlay network driver
+Overlay network driver
+
+Ask Gordon
+
+Copy Markdown
+
+View Markdown
+
+Table of contents
+
+Requirements
+
+Create an overlay network
+
+Encrypt traffic on an overlay network
+
+Attach a container to an overlay network
+
+Container discovery
+
+Connection limit for overlay networks
+
+Usage examples
+
+Prerequisites
+
+Use the default overlay network
+
+Use a user-defined overlay network
+
+Use an overlay network for standalone containers
+
+Next steps
+
+The overlay network driver creates a distributed network among multiple
+Docker daemon hosts. This network sits on top of (overlays) the host-specific
+networks, allowing containers connected to it to communicate securely when
+encryption is enabled. Docker transparently handles routing of each packet to
+and from the correct Docker daemon host and the correct destination container.
+
+You can create user-defined overlay networks using docker network create,
+in the same way that you can create user-defined bridge networks. Services
+or containers can be connected to more than one network at a time. Services or
+containers can only communicate across networks they're each connected to.
+
+Overlay networks are often used to create a connection between Swarm services,
+but you can also use it to connect standalone containers running on different
+hosts. When using standalone containers, it's still required that you use
+Swarm mode to establish a connection between the hosts.
+
+This page describes overlay networks in general, and when used with standalone
+containers. For information about overlay for Swarm services, see
+Manage Swarm service networks.
+
+Requirements
+
+Docker hosts must be part of a swarm to use overlay networks, even when
+connecting standalone containers. The following ports must be open between
+participating hosts:
+
+PortsDescription
+
+2377/tcpThe default Swarm control plane port, is configurable with
+docker swarm join --listen-addr
+
+4789/udpThe default overlay traffic port, configurable with
+docker swarm init --data-path-port
+
+7946/tcp, 7946/udpUsed for communication among nodes, not configurable
+
+Create an overlay network
+
+To create an overlay network that containers on other Docker hosts can connect to,
+run the following command:
+
+$ docker network create -d overlay --attachable my-attachable-overlay
+
+The --attachable option enables both standalone containers
+and Swarm services to connect to the overlay network.
+Without --attachable, only Swarm services can connect to the network.
+
+You can specify the IP address range, subnet, gateway, and other options. See
+docker network create --help for details.
+
+Encrypt traffic on an overlay network
+
+Use the --opt encrypted flag to encrypt the application data
+transmitted over the overlay network:
+
+$ docker network create \
+--opt encrypted \
+--driver overlay \
+--attachable \
+my-attachable-multi-host-network
+
+This enables IPsec encryption at the level of the Virtual Extensible LAN (VXLAN).
+This encryption imposes a non-negligible performance penalty,
+so you should test this option before using it in production.
+
+Warning
+
+Don't attach Windows containers to encrypted overlay networks.
+
+Overlay network encryption isn't supported on Windows.
+Swarm doesn't report an error when a Windows host
+attempts to connect to an encrypted overlay network,
+but networking for the Windows containers is affected as follows:
+
+Windows containers can't communicate with Linux containers on the network
+
+Data traffic between Windows containers on the network isn't encrypted
+
+Attach a container to an overlay network
+
+Adding containers to an overlay network gives them the ability to communicate
+with other containers without having to set up routing on the individual Docker
+daemon hosts. A prerequisite for doing this is that the hosts have joined the same Swarm.
+
+To join an overlay network named multi-host-network with a busybox container:
+
+$ docker run --network multi-host-network busybox sh
+
+Note
+
+This only works if the overlay network is attachable
+(created with the --attachable flag).
+
+Container discovery
+
+Publishing ports of a container on an overlay network opens the ports to other
+containers on the same network. Containers are discoverable by doing a DNS lookup
+using the container name.
+
+Flag valueDescription
+
+-p 8080:80Map TCP port 80 in the container to port 8080 on the overlay network.
+
+-p 8080:80/udpMap UDP port 80 in the container to port 8080 on the overlay network.
+
+-p 8080:80/sctpMap SCTP port 80 in the container to port 8080 on the overlay network.
+
+-p 8080:80/tcp -p 8080:80/udpMap TCP port 80 in the container to TCP port 8080 on the overlay network, and map UDP port 80 in the container to UDP port 8080 on the overlay network.
+
+Connection limit for overlay networks
+
+Due to limitations set by the Linux kernel, overlay networks become unstable and
+inter-container communications may break when 1000 containers are co-located on
+the same host.
+
+For more information about this limitation, see
+moby/moby#44973.
+
+Usage examples
+
+This section provides hands-on examples for working with overlay networks. These
+examples cover swarm services and standalone containers on multiple Docker hosts.
+
+Prerequisites
+
+All examples require at least a single-node swarm. Initialize one by running
+docker swarm init on the host. You can run these examples on multi-node
+swarms as well.
+
+Use the default overlay network
+
+This example shows how the default overlay network works with swarm services.
+You'll create an nginx service and examine the network from the service
+containers' perspective.
+
+Prerequisites for multi-node setup
+
+This walkthrough requires three Docker hosts that can communicate with each
+other on the same network with no firewall blocking traffic between them:
+
+manager: Functions as both manager and worker
+
+worker-1: Functions as worker only
+
+worker-2: Functions as worker only
+
+If you don't have three hosts available, you can set up three virtual machines
+on a cloud provider with Docker installed.
+
+Create the swarm
+
+On manager, initialize the swarm. If the host has one network interface,
+the --advertise-addr flag is optional:
+
+$ docker swarm init --advertise-addr=<IP-ADDRESS-OF-MANAGER>
+
+Save the join token displayed for use with workers.
+
+On worker-1, join the swarm:
+
+$ docker swarm join --token <TOKEN> \
+--advertise-addr <IP-ADDRESS-OF-WORKER-1> \
+<IP-ADDRESS-OF-MANAGER>:2377
+
+On worker-2, join the swarm:
+
+$ docker swarm join --token <TOKEN> \
+--advertise-addr <IP-ADDRESS-OF-WORKER-2> \
+<IP-ADDRESS-OF-MANAGER>:2377
+
+On manager, list all nodes:
+
+$ docker node ls
+
+ID HOSTNAME STATUS AVAILABILITY MANAGER STATUS
+d68ace5iraw6whp7llvgjpu48 * ip-172-31-34-146 Ready Active Leader
+nvp5rwavvb8lhdggo8fcf7plg ip-172-31-35-151 Ready Active
+ouvx2l7qfcxisoyms8mtkgahw ip-172-31-36-89 Ready Active
+
+Filter by role if needed:
+
+$ docker node ls --filter role=manager
+$ docker node ls --filter role=worker
+
+List Docker networks on all hosts. Each now has an overlay network called
+ingress and a bridge network called docker_gwbridge:
+
+$ docker network ls
+
+NETWORK ID NAME DRIVER SCOPE
+495c570066be bridge bridge local
+961c6cae9945 docker_gwbridge bridge local
+ff35ceda3643 host host local
+trtnl4tqnc3n ingress overlay swarm
+c8357deec9cb none null local
+
+The docker_gwbridge connects the ingress network to the Docker host's
+network interface. If you create services without specifying a network, they
+connect to ingress. It's recommended to use separate overlay networks for each
+application or group of related applications.
+
+Create the services
+
+On manager, create a new overlay network:
+
+$ docker network create -d overlay nginx-net
+
+The overlay network is automatically created on worker nodes when they run
+service tasks that need it.
+
+On manager, create a 5-replica Nginx service connected to nginx-net:
+
+Note
+
+Services can only be created on a manager.
+
+$ docker service create \
+--name my-nginx \
+--publish target=80,published=80 \
+--replicas=5 \
+--network nginx-net \
+nginx
+
+The default ingress publish mode means you can browse to port 80 on any
+node and connect to one of the 5 service tasks, even if no tasks run on that
+node.
+
+Monitor service creation progress:
+
+$ docker service ls
+
+Inspect the nginx-net network on all hosts. The Containers section lists
+all service tasks connected to the overlay network from that host.
+
+From manager, inspect the service:
+
+$ docker service inspect my-nginx
+
+Notice the information about ports and endpoints.
+
+Create a second network and update the service to use it:
+
+$ docker network create -d overlay nginx-net-2
+$ docker service update \
+--network-add nginx-net-2 \
+--network-rm nginx-net \
+my-nginx
+
+Verify the update completed:
+
+$ docker service ls
+
+Inspect both networks to verify containers moved from nginx-net to
+nginx-net-2.
+
+Note
+
+Overlay networks are automatically created on swarm worker nodes as needed,
+but aren't automatically removed.
+
+Clean up:
+
+$ docker service rm my-nginx
+$ docker network rm nginx-net nginx-net-2
+
+Use a user-defined overlay network
+
+This example shows the recommended approach for production services using custom
+overlay networks.
+
+Prerequisites
+
+This assumes the swarm is already set up and you're on a manager node.
+
+Steps
+
+Create a user-defined overlay network:
+
+$ docker network create -d overlay my-overlay
+
+Start a service using the overlay network, publishing port 80 to port 8080:
+
+$ docker service create \
+--name my-nginx \
+--network my-overlay \
+--replicas 1 \
+--publish published=8080,target=80 \
+nginx:latest
+
+Verify the service task is connected to the network:
+
+$ docker network inspect my-overlay
+
+Check the Containers section for the my-nginx service task.
+
+Clean up:
+
+$ docker service rm my-nginx
+$ docker network rm my-overlay
+
+Use an overlay network for standalone containers
+
+This example demonstrates DNS container discovery between standalone containers
+on different Docker hosts using an overlay network.
+
+Prerequisites
+
+You need two Docker hosts that can communicate with each other with the
+following ports open between them:
+
+TCP port 2377
+
+TCP and UDP port 7946
+
+UDP port 4789
+
+This example refers to the hosts as host1 and host2.
+
+Steps
+
+Set up the swarm:
+
+On host1, initialize a swarm:
+
+$ docker swarm init
+Swarm initialized: current node (vz1mm9am11qcmo979tlrlox42) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+docker swarm join --token SWMTKN-1-5g90q48weqrtqryq4kj6ow0e8xm9wmv9o6vgqc5j320ymybd5c-8ex8j0bc40s6hgvy5ui5gl4gy 172.31.47.252:2377
+
+On host2, join the swarm using the token from the previous output:
+
+$ docker swarm join --token <your_token> <your_ip_address>:2377
+This node joined a swarm as a worker.
+
+If the join fails, run docker swarm leave --force on host2, verify
+network and firewall settings, and try again.
+
+On host1, create an attachable overlay network:
+
+$ docker network create --driver=overlay --attachable test-net
+uqsof8phj3ak0rq9k86zta6ht
+
+Note the returned network ID.
+
+On host1, start an interactive container that connects to test-net:
+
+$ docker run -it --name alpine1 --network test-net alpine
+/ #
+
+On host2, list available networks. Notice that test-net doesn't exist yet:
+
+$ docker network ls
+NETWORK ID NAME DRIVER SCOPE
+ec299350b504 bridge bridge local
+66e77d0d0e9a docker_gwbridge bridge local
+9f6ae26ccb82 host host local
+omvdxqrda80z ingress overlay swarm
+b65c952a4b2b none null local
+
+On host2, start a detached, interactive container that connects to
+test-net:
+
+$ docker run -dit --name alpine2 --network test-net alpine
+fb635f5ece59563e7b8b99556f816d24e6949a5f6a5b1fbd92ca244db17a4342
+
+Note
+
+Automatic DNS container discovery only works with unique container names.
+
+On host2, verify that test-net was created with the same network ID as on
+host1:
+
+$ docker network ls
+NETWORK ID NAME DRIVER SCOPE
+...
+uqsof8phj3ak test-net overlay swarm
+
+On host1, ping alpine2 from within alpine1:
+
+/ # ping -c 2 alpine2
+PING alpine2 (10.0.0.5): 56 data bytes
+64 bytes from 10.0.0.5: seq=0 ttl=64 time=0.600 ms
+64 bytes from 10.0.0.5: seq=1 ttl=64 time=0.555 ms
+
+--- alpine2 ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 0.555/0.577/0.600 ms
+
+The two containers communicate over the overlay network connecting the two
+hosts. You can also run another container on host2 and ping alpine1:
+
+$ docker run -it --rm --name alpine3 --network test-net alpine
+/ # ping -c 2 alpine1
+/ # exit
+
+On host1, close the alpine1 session (which stops the container):
+
+/ # exit
+
+Clean up. You must stop and remove containers on each host independently:
+
+On host2:
+
+$ docker container stop alpine2
+$ docker network ls
+$ docker container rm alpine2
+
+When you stop alpine2, test-net disappears from host2.
+
+On host1:
+
+$ docker container rm alpine1
+$ docker network rm test-net
+
+Next steps
+
+Learn about networking from the container's point of view
+
+Learn about standalone bridge networks
+
+Learn about Macvlan networks
+
+Edit this page
+
+Request changes
+
+Table of contents
+
+Requirements
+
+Create an overlay network
+
+Encrypt traffic on an overlay network
+
+Attach a container to an overlay network
+
+Container discovery
+
+Connection limit for overlay networks
+
+Usage examples
+
+Prerequisites
+
+Use the default overlay network
+
+Use a user-defined overlay network
+
+Use an overlay network for standalone containers
+
+Next steps
+
+Product offerings
+Pricing
+About us
+llms.txt
+llms-full.txt
+
+Cookies Settings
+
+|
+Terms of Use
+|
+Status
+|
+Legal
+
+Copyright © 2013-2026 Docker Inc. All rights reserved.
+Automated traffic detection
